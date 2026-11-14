@@ -1176,7 +1176,7 @@ function CaptureView({
         {!canWrite && (
           <div className="w-full mb-4 rounded-2xl border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive text-center">
             Your trial has ended — viewing is fine, but capturing marks is paused.{" "}
-            <Link to="/choose-plan" className="font-semibold underline underline-offset-2">
+            <Link to="/choose-plan" search={{ cancelled: undefined }} className="font-semibold underline underline-offset-2">
               Add a payment method
             </Link>
           </div>

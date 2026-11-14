@@ -22,6 +22,9 @@ async function extractDocx(buf: ArrayBuffer): Promise<string> {
 }
 
 function extractSpreadsheet(buf: ArrayBuffer): string {
+  if (buf.byteLength > 50 * 1024 * 1024) {
+    throw new Error("Spreadsheet is over 50 MB");
+  }
   const wb = XLSX.read(buf, { type: "array" });
   const parts: string[] = [];
   for (const sheetName of wb.SheetNames.slice(0, 8)) {

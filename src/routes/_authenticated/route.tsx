@@ -21,7 +21,7 @@ export const Route = createFileRoute("/_authenticated")({
     const periodEndMs = sub?.current_period_end ? new Date(sub.current_period_end).getTime() : 0;
     const hasGraceAccess = sub?.status === "cancelled" && periodEndMs > Date.now();
     const hasAccess = sub?.status === "active" || hasGraceAccess;
-    if (!hasAccess) throw redirect({ to: "/choose-plan" });
+    if (!hasAccess) throw redirect({ to: "/choose-plan", search: { cancelled: undefined } });
 
     return { user: data.user };
   },

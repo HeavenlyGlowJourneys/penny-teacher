@@ -41,7 +41,6 @@ export function publicHealthPayload(input: {
 }
 
 export const Route = createFileRoute("/api/healthz")({
-  // @ts-expect-error - server block is transformed by TanStack router plugin at build time
   server: {
     handlers: {
       GET: async () => {

@@ -168,7 +168,7 @@ function BillingPage() {
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             {!isPaid ? (
               <Button asChild className="h-12 rounded-xl text-base">
-                <Link to="/choose-plan">Add payment method</Link>
+                <Link to="/choose-plan" search={{ cancelled: undefined }}>Add payment method</Link>
               </Button>
             ) : (
               !sub.isCancelled && (

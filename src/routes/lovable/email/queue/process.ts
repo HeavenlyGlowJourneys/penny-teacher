@@ -120,7 +120,6 @@ async function moveToDlq(
 }
 
 export const Route = createFileRoute("/lovable/email/queue/process")({
-  // @ts-expect-error - server block is transformed by TanStack router plugin at build time
   server: {
     handlers: {
       POST: async ({ request }: { request: Request }) => {

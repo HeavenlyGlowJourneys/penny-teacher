@@ -31,7 +31,6 @@ function mapReasonToMessage(reason: string): string {
 }
 
 export const Route = createFileRoute("/lovable/email/suppression")({
-  // @ts-expect-error - server block is transformed by TanStack router plugin at build time
   server: {
     handlers: {
       POST: async ({ request }: { request: Request }) => {

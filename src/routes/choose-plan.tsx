@@ -50,7 +50,7 @@ function ChoosePlanPage() {
   useEffect(() => {
     if (!cancelled) return;
     toast.message("Payment cancelled — no charge was made. You can try again whenever you're ready.");
-    void navigate({ to: "/choose-plan", search: {}, replace: true });
+    void navigate({ to: "/choose-plan", search: { cancelled: undefined }, replace: true });
   }, [cancelled, navigate]);
 
   if (!signedIn) {

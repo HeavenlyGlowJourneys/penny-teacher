@@ -69,7 +69,7 @@ function PricingPage() {
       navigate({ to: "/billing" });
       return;
     }
-    navigate({ to: "/choose-plan" });
+    navigate({ to: "/choose-plan", search: { cancelled: undefined } });
   }
 
   const isCurrentPaidPlan = !!signedIn && sub.status === "active" && sub.plan === "standard";

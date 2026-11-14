@@ -167,7 +167,7 @@ function NewAssessment() {
         {!canWrite && (
           <div className="rounded-2xl border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
             Creating assessments is paused.{" "}
-            <Link to="/choose-plan" className="font-semibold underline underline-offset-2">
+            <Link to="/choose-plan" search={{ cancelled: undefined }} className="font-semibold underline underline-offset-2">
               Add a payment method
             </Link>
           </div>

@@ -38,7 +38,6 @@ function redactEmail(email: string | null | undefined): string {
 }
 
 export const Route = createFileRoute("/lovable/email/auth/webhook")({
-  // @ts-expect-error - server block is transformed by TanStack router plugin at build time
   server: {
     handlers: {
       POST: async ({ request }: { request: Request }) => {

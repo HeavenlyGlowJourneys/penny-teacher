@@ -9,7 +9,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/api/cron/purge-scheduled-deletions")({
-  // @ts-expect-error - server block is transformed by TanStack router plugin at build time
   server: {
     handlers: {
       POST: async ({ request }: { request: Request }) => {

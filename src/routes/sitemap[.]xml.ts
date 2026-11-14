@@ -10,7 +10,6 @@ interface SitemapEntry {
 }
 
 export const Route = createFileRoute("/sitemap.xml")({
-  // @ts-expect-error - server block is transformed by TanStack router plugin at build time
   server: {
     handlers: {
       GET: async () => {

@@ -70,6 +70,9 @@ export function downloadPennyTemplate() {
 
 /** Read an .xlsx or .csv file as a 2D array of cell values (first sheet). */
 export async function readFileAsRows(file: File): Promise<unknown[][]> {
+  if (file.size > 10 * 1024 * 1024) {
+    throw new Error("File too large — max 10MB.");
+  }
   const buf = await file.arrayBuffer();
   const wb = XLSX.read(buf, { type: "array", cellDates: true });
   const sheetName = wb.SheetNames[0];

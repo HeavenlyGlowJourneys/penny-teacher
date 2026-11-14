@@ -15,7 +15,7 @@ export function useRequireWriteAccess() {
         ? `Your trial has ended — add a payment method to ${actionLabel}.`
         : `Add a payment method to ${actionLabel}.`,
     );
-    void navigate({ to: "/choose-plan" });
+    void navigate({ to: "/choose-plan", search: { cancelled: undefined } });
     return false;
   }
 

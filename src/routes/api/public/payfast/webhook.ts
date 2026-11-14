@@ -41,7 +41,6 @@ async function sendSubscriptionSuccessEmail(teacherId: string, renewsAt: string)
 }
 
 export const Route = createFileRoute("/api/public/payfast/webhook")({
-  // @ts-expect-error - server block is transformed by TanStack router plugin at build time
   server: {
     handlers: {
       POST: async ({ request }: { request: Request }) => {

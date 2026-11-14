@@ -78,6 +78,10 @@ function NewClass() {
   }
 
   async function handleExcel(file: File) {
+    if (file.size > 10 * 1024 * 1024) {
+      toast.error("File too large — max 10MB.");
+      return;
+    }
     try {
       const buf = await file.arrayBuffer();
       const wb = XLSX.read(buf, { type: "array" });
@@ -274,7 +278,7 @@ function NewClass() {
               className="h-11 rounded-xl w-full"
               onClick={() => {
                 setDupOpen(false);
-                if (dupClassId) navigate({ to: "/assessment/new/$classId", params: { classId: dupClassId } });
+                if (dupClassId) navigate({ to: "/assessment/new/$classId", params: { classId: dupClassId }, search: { termPeriodId: undefined, subject: undefined } });
               }}
             >
               Yes — add an assessment to the existing class

@@ -255,7 +255,7 @@ function ClassDetail() {
     if (!n) return;
     if (!sub.canWrite) {
       toast.error("Your trial has ended — add a payment method to add learners.");
-      void navigate({ to: "/choose-plan" });
+      void navigate({ to: "/choose-plan", search: { cancelled: undefined } });
       return;
     }
     if (assessments.length > 0) {
@@ -880,15 +880,15 @@ function ClassDetail() {
             }
             if (!sub.canWrite) {
               toast.error("Your trial has ended — add a payment method to create assessments.");
-              void navigate({ to: "/choose-plan" });
+              void navigate({ to: "/choose-plan", search: { cancelled: undefined } });
               return;
             }
             void navigate({
               to: "/assessment/new/$classId",
               params: { classId },
               search: {
-                ...(termTab !== "all" ? { termPeriodId: termTab } : {}),
-                ...(subjectTab !== "all" ? { subject: subjectTab } : {}),
+                termPeriodId: termTab !== "all" ? termTab : undefined,
+                subject: subjectTab !== "all" ? subjectTab : undefined,
               },
             });
           }}

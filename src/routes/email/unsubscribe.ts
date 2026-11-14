@@ -9,7 +9,6 @@ function redactEmail(email: string | null | undefined): string {
 }
 
 export const Route = createFileRoute("/email/unsubscribe")({
-  // @ts-expect-error - server block is transformed by TanStack router plugin at build time
   server: {
     handlers: {
       GET: async ({ request }: { request: Request }) => {

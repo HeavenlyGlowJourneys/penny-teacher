@@ -9,107 +9,66 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as TermsRouteImport } from './routes/terms'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as ResetPasswordRouteImport } from './routes/reset-password'
-import { Route as PrivacyRouteImport } from './routes/privacy'
-import { Route as PricingRouteImport } from './routes/pricing'
-import { Route as PaymentSuccessRouteImport } from './routes/payment-success'
-import { Route as FounderRouteImport } from './routes/founder'
-import { Route as FaqRouteImport } from './routes/faq'
-import { Route as ChoosePlanRouteImport } from './routes/choose-plan'
-import { Route as BillingRouteImport } from './routes/billing'
-import { Route as AuthRouteImport } from './routes/auth'
-import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ToolsIndexRouteImport } from './routes/tools/index'
-import { Route as EmailUnsubscribeRouteImport } from './routes/email/unsubscribe'
-import { Route as ApiHealthzRouteImport } from './routes/api/healthz'
-import { Route as AuthenticatedSettingsRouteImport } from './routes/_authenticated/settings'
-import { Route as AuthenticatedReportCommentsRouteImport } from './routes/_authenticated/report-comments'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
+import { Route as AuthRouteImport } from './routes/auth'
+import { Route as BillingRouteImport } from './routes/billing'
+import { Route as ChoosePlanRouteImport } from './routes/choose-plan'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as FounderRouteImport } from './routes/founder'
+import { Route as PaymentSuccessRouteImport } from './routes/payment-success'
+import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ResetPasswordRouteImport } from './routes/reset-password'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as TermsRouteImport } from './routes/terms'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
-import { Route as ToolsPrepCheckIndexRouteImport } from './routes/tools/prep-check/index'
-import { Route as ToolsOralAssessmentIndexRouteImport } from './routes/tools/oral-assessment/index'
-import { Route as AuthenticatedSettingsIndexRouteImport } from './routes/_authenticated/settings.index'
-import { Route as ToolsPrepCheckReviewRouteImport } from './routes/tools/prep-check/review'
-import { Route as ToolsPrepCheckLibraryRouteImport } from './routes/tools/prep-check/library'
-import { Route as ToolsPrepCheckConfigRouteImport } from './routes/tools/prep-check/config'
-import { Route as ToolsOralAssessmentStudentRouteImport } from './routes/tools/oral-assessment/student'
-import { Route as ToolsOralAssessmentCreateRouteImport } from './routes/tools/oral-assessment/create'
-import { Route as ToolsOralAssessmentAssessmentIdRouteImport } from './routes/tools/oral-assessment/$assessmentId'
-import { Route as LovableEmailSuppressionRouteImport } from './routes/lovable/email/suppression'
-import { Route as ApiCronPurgeScheduledDeletionsRouteImport } from './routes/api/cron/purge-scheduled-deletions'
-import { Route as AuthenticatedTermMarksClassIdRouteImport } from './routes/_authenticated/term-marks.$classId'
-import { Route as AuthenticatedSettingsPreferencesRouteImport } from './routes/_authenticated/settings.preferences'
-import { Route as AuthenticatedSettingsAcademicYearRouteImport } from './routes/_authenticated/settings.academic-year'
-import { Route as AuthenticatedLearnerLearnerIdRouteImport } from './routes/_authenticated/learner.$learnerId'
-import { Route as AuthenticatedLearnClassIdRouteImport } from './routes/_authenticated/learn.$classId'
-import { Route as AuthenticatedClassNewRouteImport } from './routes/_authenticated/class.new'
-import { Route as AuthenticatedClassClassIdRouteImport } from './routes/_authenticated/class.$classId'
+import { Route as AuthenticatedReportCommentsRouteImport } from './routes/_authenticated/report-comments'
+import { Route as AuthenticatedSettingsRouteImport } from './routes/_authenticated/settings'
+import { Route as ApiHealthzRouteImport } from './routes/api/healthz'
+import { Route as EmailUnsubscribeRouteImport } from './routes/email/unsubscribe'
+import { Route as ToolsIndexRouteImport } from './routes/tools/index'
 import { Route as AuthenticatedAssessmentAssessmentIdRouteImport } from './routes/_authenticated/assessment.$assessmentId'
-import { Route as AuthenticatedClassClassIdIndexRouteImport } from './routes/_authenticated/class.$classId.index'
-import { Route as ToolsPrepCheckSubjectSubjectIdRouteImport } from './routes/tools/prep-check/subject.$subjectId'
-import { Route as ToolsPrepCheckReportReviewIdRouteImport } from './routes/tools/prep-check/report.$reviewId'
-import { Route as ToolsOralAssessmentReportSessionIdRouteImport } from './routes/tools/oral-assessment/report.$sessionId'
-import { Route as ToolsOralAssessmentInviteTokenRouteImport } from './routes/tools/oral-assessment/invite.$token'
-import { Route as ToolsOralAssessmentInterviewSessionIdRouteImport } from './routes/tools/oral-assessment/interview.$sessionId'
-import { Route as LovableEmailTransactionalSendRouteImport } from './routes/lovable/email/transactional/send'
-import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
-import { Route as LovableEmailAuthWebhookRouteImport } from './routes/lovable/email/auth/webhook'
-import { Route as ApiPublicPayfastWebhookRouteImport } from './routes/api/public/payfast/webhook'
-import { Route as AuthenticatedClassClassIdReportCommentsRouteImport } from './routes/_authenticated/class.$classId.report-comments'
-import { Route as AuthenticatedClassClassIdImportRouteImport } from './routes/_authenticated/class.$classId.import'
-import { Route as AuthenticatedClassClassIdBulkEntryRouteImport } from './routes/_authenticated/class.$classId.bulk-entry'
+import { Route as AuthenticatedClassClassIdRouteImport } from './routes/_authenticated/class.$classId'
+import { Route as AuthenticatedClassNewRouteImport } from './routes/_authenticated/class.new'
+import { Route as AuthenticatedLearnClassIdRouteImport } from './routes/_authenticated/learn.$classId'
+import { Route as AuthenticatedLearnerLearnerIdRouteImport } from './routes/_authenticated/learner.$learnerId'
+import { Route as AuthenticatedSettingsIndexRouteImport } from './routes/_authenticated/settings.index'
+import { Route as AuthenticatedSettingsAcademicYearRouteImport } from './routes/_authenticated/settings.academic-year'
+import { Route as AuthenticatedSettingsPreferencesRouteImport } from './routes/_authenticated/settings.preferences'
+import { Route as AuthenticatedTermMarksClassIdRouteImport } from './routes/_authenticated/term-marks.$classId'
+import { Route as ApiCronPurgeScheduledDeletionsRouteImport } from './routes/api/cron/purge-scheduled-deletions'
+import { Route as LovableEmailSuppressionRouteImport } from './routes/lovable/email/suppression'
+import { Route as ToolsOralAssessmentIndexRouteImport } from './routes/tools/oral-assessment/index'
+import { Route as ToolsOralAssessmentAssessmentIdRouteImport } from './routes/tools/oral-assessment/$assessmentId'
+import { Route as ToolsOralAssessmentCreateRouteImport } from './routes/tools/oral-assessment/create'
+import { Route as ToolsOralAssessmentStudentRouteImport } from './routes/tools/oral-assessment/student'
+import { Route as ToolsPrepCheckIndexRouteImport } from './routes/tools/prep-check/index'
+import { Route as ToolsPrepCheckConfigRouteImport } from './routes/tools/prep-check/config'
+import { Route as ToolsPrepCheckLibraryRouteImport } from './routes/tools/prep-check/library'
+import { Route as ToolsPrepCheckReviewRouteImport } from './routes/tools/prep-check/review'
 import { Route as AuthenticatedAssessmentNewClassIdRouteImport } from './routes/_authenticated/assessment.new.$classId'
+import { Route as AuthenticatedClassClassIdIndexRouteImport } from './routes/_authenticated/class.$classId.index'
+import { Route as AuthenticatedClassClassIdBulkEntryRouteImport } from './routes/_authenticated/class.$classId.bulk-entry'
+import { Route as AuthenticatedClassClassIdImportRouteImport } from './routes/_authenticated/class.$classId.import'
+import { Route as AuthenticatedClassClassIdReportCommentsRouteImport } from './routes/_authenticated/class.$classId.report-comments'
+import { Route as ApiPublicPayfastWebhookRouteImport } from './routes/api/public/payfast/webhook'
+import { Route as LovableEmailAuthWebhookRouteImport } from './routes/lovable/email/auth/webhook'
+import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
+import { Route as LovableEmailTransactionalSendRouteImport } from './routes/lovable/email/transactional/send'
+import { Route as ToolsOralAssessmentInterviewSessionIdRouteImport } from './routes/tools/oral-assessment/interview.$sessionId'
+import { Route as ToolsOralAssessmentInviteTokenRouteImport } from './routes/tools/oral-assessment/invite.$token'
+import { Route as ToolsOralAssessmentReportSessionIdRouteImport } from './routes/tools/oral-assessment/report.$sessionId'
+import { Route as ToolsPrepCheckReportReviewIdRouteImport } from './routes/tools/prep-check/report.$reviewId'
+import { Route as ToolsPrepCheckSubjectSubjectIdRouteImport } from './routes/tools/prep-check/subject.$subjectId'
 
-const TermsRoute = TermsRouteImport.update({
-  id: '/terms',
-  path: '/terms',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ResetPasswordRoute = ResetPasswordRouteImport.update({
-  id: '/reset-password',
-  path: '/reset-password',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacyRoute = PrivacyRouteImport.update({
-  id: '/privacy',
-  path: '/privacy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PricingRoute = PricingRouteImport.update({
-  id: '/pricing',
-  path: '/pricing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PaymentSuccessRoute = PaymentSuccessRouteImport.update({
-  id: '/payment-success',
-  path: '/payment-success',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FounderRoute = FounderRouteImport.update({
-  id: '/founder',
-  path: '/founder',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaqRoute = FaqRouteImport.update({
-  id: '/faq',
-  path: '/faq',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ChoosePlanRoute = ChoosePlanRouteImport.update({
-  id: '/choose-plan',
-  path: '/choose-plan',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BillingRoute = BillingRouteImport.update({
-  id: '/billing',
-  path: '/billing',
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthRoute = AuthRouteImport.update({
@@ -117,33 +76,59 @@ const AuthRoute = AuthRouteImport.update({
   path: '/auth',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
-  id: '/_authenticated',
+const BillingRoute = BillingRouteImport.update({
+  id: '/billing',
+  path: '/billing',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ChoosePlanRoute = ChoosePlanRouteImport.update({
+  id: '/choose-plan',
+  path: '/choose-plan',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ToolsIndexRoute = ToolsIndexRouteImport.update({
-  id: '/tools/',
-  path: '/tools/',
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EmailUnsubscribeRoute = EmailUnsubscribeRouteImport.update({
-  id: '/email/unsubscribe',
-  path: '/email/unsubscribe',
+const FounderRoute = FounderRouteImport.update({
+  id: '/founder',
+  path: '/founder',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiHealthzRoute = ApiHealthzRouteImport.update({
-  id: '/api/healthz',
-  path: '/api/healthz',
+const PaymentSuccessRoute = PaymentSuccessRouteImport.update({
+  id: '/payment-success',
+  path: '/payment-success',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AuthenticatedSettingsRoute = AuthenticatedSettingsRouteImport.update({
-  id: '/settings',
-  path: '/settings',
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResetPasswordRoute = ResetPasswordRouteImport.update({
+  id: '/reset-password',
+  path: '/reset-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedDashboardRoute = AuthenticatedDashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
 const AuthenticatedReportCommentsRoute =
@@ -152,82 +137,59 @@ const AuthenticatedReportCommentsRoute =
     path: '/report-comments',
     getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
-const AuthenticatedDashboardRoute = AuthenticatedDashboardRouteImport.update({
-  id: '/dashboard',
-  path: '/dashboard',
+const AuthenticatedSettingsRoute = AuthenticatedSettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
-const ToolsPrepCheckIndexRoute = ToolsPrepCheckIndexRouteImport.update({
-  id: '/tools/prep-check/',
-  path: '/tools/prep-check/',
+const ApiHealthzRoute = ApiHealthzRouteImport.update({
+  id: '/api/healthz',
+  path: '/api/healthz',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ToolsOralAssessmentIndexRoute =
-  ToolsOralAssessmentIndexRouteImport.update({
-    id: '/tools/oral-assessment/',
-    path: '/tools/oral-assessment/',
-    getParentRoute: () => rootRouteImport,
+const EmailUnsubscribeRoute = EmailUnsubscribeRouteImport.update({
+  id: '/email/unsubscribe',
+  path: '/email/unsubscribe',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsIndexRoute = ToolsIndexRouteImport.update({
+  id: '/tools/',
+  path: '/tools/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedAssessmentAssessmentIdRoute =
+  AuthenticatedAssessmentAssessmentIdRouteImport.update({
+    id: '/assessment/$assessmentId',
+    path: '/assessment/$assessmentId',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedClassClassIdRoute =
+  AuthenticatedClassClassIdRouteImport.update({
+    id: '/class/$classId',
+    path: '/class/$classId',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedClassNewRoute = AuthenticatedClassNewRouteImport.update({
+  id: '/class/new',
+  path: '/class/new',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedLearnClassIdRoute =
+  AuthenticatedLearnClassIdRouteImport.update({
+    id: '/learn/$classId',
+    path: '/learn/$classId',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedLearnerLearnerIdRoute =
+  AuthenticatedLearnerLearnerIdRouteImport.update({
+    id: '/learner/$learnerId',
+    path: '/learner/$learnerId',
+    getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
 const AuthenticatedSettingsIndexRoute =
   AuthenticatedSettingsIndexRouteImport.update({
     id: '/',
     path: '/',
-    getParentRoute: () => AuthenticatedSettingsRoute,
-  } as any)
-const ToolsPrepCheckReviewRoute = ToolsPrepCheckReviewRouteImport.update({
-  id: '/tools/prep-check/review',
-  path: '/tools/prep-check/review',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ToolsPrepCheckLibraryRoute = ToolsPrepCheckLibraryRouteImport.update({
-  id: '/tools/prep-check/library',
-  path: '/tools/prep-check/library',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ToolsPrepCheckConfigRoute = ToolsPrepCheckConfigRouteImport.update({
-  id: '/tools/prep-check/config',
-  path: '/tools/prep-check/config',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ToolsOralAssessmentStudentRoute =
-  ToolsOralAssessmentStudentRouteImport.update({
-    id: '/tools/oral-assessment/student',
-    path: '/tools/oral-assessment/student',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ToolsOralAssessmentCreateRoute =
-  ToolsOralAssessmentCreateRouteImport.update({
-    id: '/tools/oral-assessment/create',
-    path: '/tools/oral-assessment/create',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ToolsOralAssessmentAssessmentIdRoute =
-  ToolsOralAssessmentAssessmentIdRouteImport.update({
-    id: '/tools/oral-assessment/$assessmentId',
-    path: '/tools/oral-assessment/$assessmentId',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const LovableEmailSuppressionRoute = LovableEmailSuppressionRouteImport.update({
-  id: '/lovable/email/suppression',
-  path: '/lovable/email/suppression',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiCronPurgeScheduledDeletionsRoute =
-  ApiCronPurgeScheduledDeletionsRouteImport.update({
-    id: '/api/cron/purge-scheduled-deletions',
-    path: '/api/cron/purge-scheduled-deletions',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const AuthenticatedTermMarksClassIdRoute =
-  AuthenticatedTermMarksClassIdRouteImport.update({
-    id: '/term-marks/$classId',
-    path: '/term-marks/$classId',
-    getParentRoute: () => AuthenticatedRouteRoute,
-  } as any)
-const AuthenticatedSettingsPreferencesRoute =
-  AuthenticatedSettingsPreferencesRouteImport.update({
-    id: '/preferences',
-    path: '/preferences',
     getParentRoute: () => AuthenticatedSettingsRoute,
   } as any)
 const AuthenticatedSettingsAcademicYearRoute =
@@ -236,33 +198,77 @@ const AuthenticatedSettingsAcademicYearRoute =
     path: '/academic-year',
     getParentRoute: () => AuthenticatedSettingsRoute,
   } as any)
-const AuthenticatedLearnerLearnerIdRoute =
-  AuthenticatedLearnerLearnerIdRouteImport.update({
-    id: '/learner/$learnerId',
-    path: '/learner/$learnerId',
+const AuthenticatedSettingsPreferencesRoute =
+  AuthenticatedSettingsPreferencesRouteImport.update({
+    id: '/preferences',
+    path: '/preferences',
+    getParentRoute: () => AuthenticatedSettingsRoute,
+  } as any)
+const AuthenticatedTermMarksClassIdRoute =
+  AuthenticatedTermMarksClassIdRouteImport.update({
+    id: '/term-marks/$classId',
+    path: '/term-marks/$classId',
     getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
-const AuthenticatedLearnClassIdRoute =
-  AuthenticatedLearnClassIdRouteImport.update({
-    id: '/learn/$classId',
-    path: '/learn/$classId',
-    getParentRoute: () => AuthenticatedRouteRoute,
+const ApiCronPurgeScheduledDeletionsRoute =
+  ApiCronPurgeScheduledDeletionsRouteImport.update({
+    id: '/api/cron/purge-scheduled-deletions',
+    path: '/api/cron/purge-scheduled-deletions',
+    getParentRoute: () => rootRouteImport,
   } as any)
-const AuthenticatedClassNewRoute = AuthenticatedClassNewRouteImport.update({
-  id: '/class/new',
-  path: '/class/new',
-  getParentRoute: () => AuthenticatedRouteRoute,
+const LovableEmailSuppressionRoute = LovableEmailSuppressionRouteImport.update({
+  id: '/lovable/email/suppression',
+  path: '/lovable/email/suppression',
+  getParentRoute: () => rootRouteImport,
 } as any)
-const AuthenticatedClassClassIdRoute =
-  AuthenticatedClassClassIdRouteImport.update({
-    id: '/class/$classId',
-    path: '/class/$classId',
-    getParentRoute: () => AuthenticatedRouteRoute,
+const ToolsOralAssessmentIndexRoute =
+  ToolsOralAssessmentIndexRouteImport.update({
+    id: '/tools/oral-assessment/',
+    path: '/tools/oral-assessment/',
+    getParentRoute: () => rootRouteImport,
   } as any)
-const AuthenticatedAssessmentAssessmentIdRoute =
-  AuthenticatedAssessmentAssessmentIdRouteImport.update({
-    id: '/assessment/$assessmentId',
-    path: '/assessment/$assessmentId',
+const ToolsOralAssessmentAssessmentIdRoute =
+  ToolsOralAssessmentAssessmentIdRouteImport.update({
+    id: '/tools/oral-assessment/$assessmentId',
+    path: '/tools/oral-assessment/$assessmentId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ToolsOralAssessmentCreateRoute =
+  ToolsOralAssessmentCreateRouteImport.update({
+    id: '/tools/oral-assessment/create',
+    path: '/tools/oral-assessment/create',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ToolsOralAssessmentStudentRoute =
+  ToolsOralAssessmentStudentRouteImport.update({
+    id: '/tools/oral-assessment/student',
+    path: '/tools/oral-assessment/student',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ToolsPrepCheckIndexRoute = ToolsPrepCheckIndexRouteImport.update({
+  id: '/tools/prep-check/',
+  path: '/tools/prep-check/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsPrepCheckConfigRoute = ToolsPrepCheckConfigRouteImport.update({
+  id: '/tools/prep-check/config',
+  path: '/tools/prep-check/config',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsPrepCheckLibraryRoute = ToolsPrepCheckLibraryRouteImport.update({
+  id: '/tools/prep-check/library',
+  path: '/tools/prep-check/library',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsPrepCheckReviewRoute = ToolsPrepCheckReviewRouteImport.update({
+  id: '/tools/prep-check/review',
+  path: '/tools/prep-check/review',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedAssessmentNewClassIdRoute =
+  AuthenticatedAssessmentNewClassIdRouteImport.update({
+    id: '/assessment/new/$classId',
+    path: '/assessment/new/$classId',
     getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
 const AuthenticatedClassClassIdIndexRoute =
@@ -271,62 +277,10 @@ const AuthenticatedClassClassIdIndexRoute =
     path: '/',
     getParentRoute: () => AuthenticatedClassClassIdRoute,
   } as any)
-const ToolsPrepCheckSubjectSubjectIdRoute =
-  ToolsPrepCheckSubjectSubjectIdRouteImport.update({
-    id: '/tools/prep-check/subject/$subjectId',
-    path: '/tools/prep-check/subject/$subjectId',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ToolsPrepCheckReportReviewIdRoute =
-  ToolsPrepCheckReportReviewIdRouteImport.update({
-    id: '/tools/prep-check/report/$reviewId',
-    path: '/tools/prep-check/report/$reviewId',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ToolsOralAssessmentReportSessionIdRoute =
-  ToolsOralAssessmentReportSessionIdRouteImport.update({
-    id: '/tools/oral-assessment/report/$sessionId',
-    path: '/tools/oral-assessment/report/$sessionId',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ToolsOralAssessmentInviteTokenRoute =
-  ToolsOralAssessmentInviteTokenRouteImport.update({
-    id: '/tools/oral-assessment/invite/$token',
-    path: '/tools/oral-assessment/invite/$token',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ToolsOralAssessmentInterviewSessionIdRoute =
-  ToolsOralAssessmentInterviewSessionIdRouteImport.update({
-    id: '/tools/oral-assessment/interview/$sessionId',
-    path: '/tools/oral-assessment/interview/$sessionId',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const LovableEmailTransactionalSendRoute =
-  LovableEmailTransactionalSendRouteImport.update({
-    id: '/lovable/email/transactional/send',
-    path: '/lovable/email/transactional/send',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const LovableEmailQueueProcessRoute =
-  LovableEmailQueueProcessRouteImport.update({
-    id: '/lovable/email/queue/process',
-    path: '/lovable/email/queue/process',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const LovableEmailAuthWebhookRoute = LovableEmailAuthWebhookRouteImport.update({
-  id: '/lovable/email/auth/webhook',
-  path: '/lovable/email/auth/webhook',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiPublicPayfastWebhookRoute = ApiPublicPayfastWebhookRouteImport.update({
-  id: '/api/public/payfast/webhook',
-  path: '/api/public/payfast/webhook',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AuthenticatedClassClassIdReportCommentsRoute =
-  AuthenticatedClassClassIdReportCommentsRouteImport.update({
-    id: '/report-comments',
-    path: '/report-comments',
+const AuthenticatedClassClassIdBulkEntryRoute =
+  AuthenticatedClassClassIdBulkEntryRouteImport.update({
+    id: '/bulk-entry',
+    path: '/bulk-entry',
     getParentRoute: () => AuthenticatedClassClassIdRoute,
   } as any)
 const AuthenticatedClassClassIdImportRoute =
@@ -335,17 +289,63 @@ const AuthenticatedClassClassIdImportRoute =
     path: '/import',
     getParentRoute: () => AuthenticatedClassClassIdRoute,
   } as any)
-const AuthenticatedClassClassIdBulkEntryRoute =
-  AuthenticatedClassClassIdBulkEntryRouteImport.update({
-    id: '/bulk-entry',
-    path: '/bulk-entry',
+const AuthenticatedClassClassIdReportCommentsRoute =
+  AuthenticatedClassClassIdReportCommentsRouteImport.update({
+    id: '/report-comments',
+    path: '/report-comments',
     getParentRoute: () => AuthenticatedClassClassIdRoute,
   } as any)
-const AuthenticatedAssessmentNewClassIdRoute =
-  AuthenticatedAssessmentNewClassIdRouteImport.update({
-    id: '/assessment/new/$classId',
-    path: '/assessment/new/$classId',
-    getParentRoute: () => AuthenticatedRouteRoute,
+const ApiPublicPayfastWebhookRoute = ApiPublicPayfastWebhookRouteImport.update({
+  id: '/api/public/payfast/webhook',
+  path: '/api/public/payfast/webhook',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LovableEmailAuthWebhookRoute = LovableEmailAuthWebhookRouteImport.update({
+  id: '/lovable/email/auth/webhook',
+  path: '/lovable/email/auth/webhook',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LovableEmailQueueProcessRoute =
+  LovableEmailQueueProcessRouteImport.update({
+    id: '/lovable/email/queue/process',
+    path: '/lovable/email/queue/process',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LovableEmailTransactionalSendRoute =
+  LovableEmailTransactionalSendRouteImport.update({
+    id: '/lovable/email/transactional/send',
+    path: '/lovable/email/transactional/send',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ToolsOralAssessmentInterviewSessionIdRoute =
+  ToolsOralAssessmentInterviewSessionIdRouteImport.update({
+    id: '/tools/oral-assessment/interview/$sessionId',
+    path: '/tools/oral-assessment/interview/$sessionId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ToolsOralAssessmentInviteTokenRoute =
+  ToolsOralAssessmentInviteTokenRouteImport.update({
+    id: '/tools/oral-assessment/invite/$token',
+    path: '/tools/oral-assessment/invite/$token',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ToolsOralAssessmentReportSessionIdRoute =
+  ToolsOralAssessmentReportSessionIdRouteImport.update({
+    id: '/tools/oral-assessment/report/$sessionId',
+    path: '/tools/oral-assessment/report/$sessionId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ToolsPrepCheckReportReviewIdRoute =
+  ToolsPrepCheckReportReviewIdRouteImport.update({
+    id: '/tools/prep-check/report/$reviewId',
+    path: '/tools/prep-check/report/$reviewId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ToolsPrepCheckSubjectSubjectIdRoute =
+  ToolsPrepCheckSubjectSubjectIdRouteImport.update({
+    id: '/tools/prep-check/subject/$subjectId',
+    path: '/tools/prep-check/subject/$subjectId',
+    getParentRoute: () => rootRouteImport,
   } as any)
 
 export interface FileRoutesByFullPath {
@@ -708,81 +708,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/terms': {
-      id: '/terms'
-      path: '/terms'
-      fullPath: '/terms'
-      preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reset-password': {
-      id: '/reset-password'
-      path: '/reset-password'
-      fullPath: '/reset-password'
-      preLoaderRoute: typeof ResetPasswordRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacy': {
-      id: '/privacy'
-      path: '/privacy'
-      fullPath: '/privacy'
-      preLoaderRoute: typeof PrivacyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pricing': {
-      id: '/pricing'
-      path: '/pricing'
-      fullPath: '/pricing'
-      preLoaderRoute: typeof PricingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/payment-success': {
-      id: '/payment-success'
-      path: '/payment-success'
-      fullPath: '/payment-success'
-      preLoaderRoute: typeof PaymentSuccessRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/founder': {
-      id: '/founder'
-      path: '/founder'
-      fullPath: '/founder'
-      preLoaderRoute: typeof FounderRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/faq': {
-      id: '/faq'
-      path: '/faq'
-      fullPath: '/faq'
-      preLoaderRoute: typeof FaqRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/choose-plan': {
-      id: '/choose-plan'
-      path: '/choose-plan'
-      fullPath: '/choose-plan'
-      preLoaderRoute: typeof ChoosePlanRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/billing': {
-      id: '/billing'
-      path: '/billing'
-      fullPath: '/billing'
-      preLoaderRoute: typeof BillingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/auth': {
-      id: '/auth'
-      path: '/auth'
-      fullPath: '/auth'
-      preLoaderRoute: typeof AuthRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/_authenticated': {
@@ -792,39 +722,88 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tools/': {
-      id: '/tools/'
-      path: '/tools'
-      fullPath: '/tools/'
-      preLoaderRoute: typeof ToolsIndexRouteImport
+    '/billing': {
+      id: '/billing'
+      path: '/billing'
+      fullPath: '/billing'
+      preLoaderRoute: typeof BillingRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/email/unsubscribe': {
-      id: '/email/unsubscribe'
-      path: '/email/unsubscribe'
-      fullPath: '/email/unsubscribe'
-      preLoaderRoute: typeof EmailUnsubscribeRouteImport
+    '/choose-plan': {
+      id: '/choose-plan'
+      path: '/choose-plan'
+      fullPath: '/choose-plan'
+      preLoaderRoute: typeof ChoosePlanRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/healthz': {
-      id: '/api/healthz'
-      path: '/api/healthz'
-      fullPath: '/api/healthz'
-      preLoaderRoute: typeof ApiHealthzRouteImport
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/_authenticated/settings': {
-      id: '/_authenticated/settings'
-      path: '/settings'
-      fullPath: '/settings'
-      preLoaderRoute: typeof AuthenticatedSettingsRouteImport
+    '/founder': {
+      id: '/founder'
+      path: '/founder'
+      fullPath: '/founder'
+      preLoaderRoute: typeof FounderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/payment-success': {
+      id: '/payment-success'
+      path: '/payment-success'
+      fullPath: '/payment-success'
+      preLoaderRoute: typeof PaymentSuccessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reset-password': {
+      id: '/reset-password'
+      path: '/reset-password'
+      fullPath: '/reset-password'
+      preLoaderRoute: typeof ResetPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated/dashboard': {
+      id: '/_authenticated/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof AuthenticatedDashboardRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
     '/_authenticated/report-comments': {
@@ -834,130 +813,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedReportCommentsRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
-    '/_authenticated/dashboard': {
-      id: '/_authenticated/dashboard'
-      path: '/dashboard'
-      fullPath: '/dashboard'
-      preLoaderRoute: typeof AuthenticatedDashboardRouteImport
+    '/_authenticated/settings': {
+      id: '/_authenticated/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof AuthenticatedSettingsRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
-    '/tools/prep-check/': {
-      id: '/tools/prep-check/'
-      path: '/tools/prep-check'
-      fullPath: '/tools/prep-check/'
-      preLoaderRoute: typeof ToolsPrepCheckIndexRouteImport
+    '/api/healthz': {
+      id: '/api/healthz'
+      path: '/api/healthz'
+      fullPath: '/api/healthz'
+      preLoaderRoute: typeof ApiHealthzRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tools/oral-assessment/': {
-      id: '/tools/oral-assessment/'
-      path: '/tools/oral-assessment'
-      fullPath: '/tools/oral-assessment/'
-      preLoaderRoute: typeof ToolsOralAssessmentIndexRouteImport
+    '/email/unsubscribe': {
+      id: '/email/unsubscribe'
+      path: '/email/unsubscribe'
+      fullPath: '/email/unsubscribe'
+      preLoaderRoute: typeof EmailUnsubscribeRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/_authenticated/settings/': {
-      id: '/_authenticated/settings/'
-      path: '/'
-      fullPath: '/settings/'
-      preLoaderRoute: typeof AuthenticatedSettingsIndexRouteImport
-      parentRoute: typeof AuthenticatedSettingsRoute
-    }
-    '/tools/prep-check/review': {
-      id: '/tools/prep-check/review'
-      path: '/tools/prep-check/review'
-      fullPath: '/tools/prep-check/review'
-      preLoaderRoute: typeof ToolsPrepCheckReviewRouteImport
+    '/tools/': {
+      id: '/tools/'
+      path: '/tools'
+      fullPath: '/tools/'
+      preLoaderRoute: typeof ToolsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tools/prep-check/library': {
-      id: '/tools/prep-check/library'
-      path: '/tools/prep-check/library'
-      fullPath: '/tools/prep-check/library'
-      preLoaderRoute: typeof ToolsPrepCheckLibraryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tools/prep-check/config': {
-      id: '/tools/prep-check/config'
-      path: '/tools/prep-check/config'
-      fullPath: '/tools/prep-check/config'
-      preLoaderRoute: typeof ToolsPrepCheckConfigRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tools/oral-assessment/student': {
-      id: '/tools/oral-assessment/student'
-      path: '/tools/oral-assessment/student'
-      fullPath: '/tools/oral-assessment/student'
-      preLoaderRoute: typeof ToolsOralAssessmentStudentRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tools/oral-assessment/create': {
-      id: '/tools/oral-assessment/create'
-      path: '/tools/oral-assessment/create'
-      fullPath: '/tools/oral-assessment/create'
-      preLoaderRoute: typeof ToolsOralAssessmentCreateRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tools/oral-assessment/$assessmentId': {
-      id: '/tools/oral-assessment/$assessmentId'
-      path: '/tools/oral-assessment/$assessmentId'
-      fullPath: '/tools/oral-assessment/$assessmentId'
-      preLoaderRoute: typeof ToolsOralAssessmentAssessmentIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/lovable/email/suppression': {
-      id: '/lovable/email/suppression'
-      path: '/lovable/email/suppression'
-      fullPath: '/lovable/email/suppression'
-      preLoaderRoute: typeof LovableEmailSuppressionRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/cron/purge-scheduled-deletions': {
-      id: '/api/cron/purge-scheduled-deletions'
-      path: '/api/cron/purge-scheduled-deletions'
-      fullPath: '/api/cron/purge-scheduled-deletions'
-      preLoaderRoute: typeof ApiCronPurgeScheduledDeletionsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_authenticated/term-marks/$classId': {
-      id: '/_authenticated/term-marks/$classId'
-      path: '/term-marks/$classId'
-      fullPath: '/term-marks/$classId'
-      preLoaderRoute: typeof AuthenticatedTermMarksClassIdRouteImport
-      parentRoute: typeof AuthenticatedRouteRoute
-    }
-    '/_authenticated/settings/preferences': {
-      id: '/_authenticated/settings/preferences'
-      path: '/preferences'
-      fullPath: '/settings/preferences'
-      preLoaderRoute: typeof AuthenticatedSettingsPreferencesRouteImport
-      parentRoute: typeof AuthenticatedSettingsRoute
-    }
-    '/_authenticated/settings/academic-year': {
-      id: '/_authenticated/settings/academic-year'
-      path: '/academic-year'
-      fullPath: '/settings/academic-year'
-      preLoaderRoute: typeof AuthenticatedSettingsAcademicYearRouteImport
-      parentRoute: typeof AuthenticatedSettingsRoute
-    }
-    '/_authenticated/learner/$learnerId': {
-      id: '/_authenticated/learner/$learnerId'
-      path: '/learner/$learnerId'
-      fullPath: '/learner/$learnerId'
-      preLoaderRoute: typeof AuthenticatedLearnerLearnerIdRouteImport
-      parentRoute: typeof AuthenticatedRouteRoute
-    }
-    '/_authenticated/learn/$classId': {
-      id: '/_authenticated/learn/$classId'
-      path: '/learn/$classId'
-      fullPath: '/learn/$classId'
-      preLoaderRoute: typeof AuthenticatedLearnClassIdRouteImport
-      parentRoute: typeof AuthenticatedRouteRoute
-    }
-    '/_authenticated/class/new': {
-      id: '/_authenticated/class/new'
-      path: '/class/new'
-      fullPath: '/class/new'
-      preLoaderRoute: typeof AuthenticatedClassNewRouteImport
+    '/_authenticated/assessment/$assessmentId': {
+      id: '/_authenticated/assessment/$assessmentId'
+      path: '/assessment/$assessmentId'
+      fullPath: '/assessment/$assessmentId'
+      preLoaderRoute: typeof AuthenticatedAssessmentAssessmentIdRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
     '/_authenticated/class/$classId': {
@@ -967,11 +855,130 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedClassClassIdRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
-    '/_authenticated/assessment/$assessmentId': {
-      id: '/_authenticated/assessment/$assessmentId'
-      path: '/assessment/$assessmentId'
-      fullPath: '/assessment/$assessmentId'
-      preLoaderRoute: typeof AuthenticatedAssessmentAssessmentIdRouteImport
+    '/_authenticated/class/new': {
+      id: '/_authenticated/class/new'
+      path: '/class/new'
+      fullPath: '/class/new'
+      preLoaderRoute: typeof AuthenticatedClassNewRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/learn/$classId': {
+      id: '/_authenticated/learn/$classId'
+      path: '/learn/$classId'
+      fullPath: '/learn/$classId'
+      preLoaderRoute: typeof AuthenticatedLearnClassIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/learner/$learnerId': {
+      id: '/_authenticated/learner/$learnerId'
+      path: '/learner/$learnerId'
+      fullPath: '/learner/$learnerId'
+      preLoaderRoute: typeof AuthenticatedLearnerLearnerIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/settings/': {
+      id: '/_authenticated/settings/'
+      path: '/'
+      fullPath: '/settings/'
+      preLoaderRoute: typeof AuthenticatedSettingsIndexRouteImport
+      parentRoute: typeof AuthenticatedSettingsRoute
+    }
+    '/_authenticated/settings/academic-year': {
+      id: '/_authenticated/settings/academic-year'
+      path: '/academic-year'
+      fullPath: '/settings/academic-year'
+      preLoaderRoute: typeof AuthenticatedSettingsAcademicYearRouteImport
+      parentRoute: typeof AuthenticatedSettingsRoute
+    }
+    '/_authenticated/settings/preferences': {
+      id: '/_authenticated/settings/preferences'
+      path: '/preferences'
+      fullPath: '/settings/preferences'
+      preLoaderRoute: typeof AuthenticatedSettingsPreferencesRouteImport
+      parentRoute: typeof AuthenticatedSettingsRoute
+    }
+    '/_authenticated/term-marks/$classId': {
+      id: '/_authenticated/term-marks/$classId'
+      path: '/term-marks/$classId'
+      fullPath: '/term-marks/$classId'
+      preLoaderRoute: typeof AuthenticatedTermMarksClassIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/api/cron/purge-scheduled-deletions': {
+      id: '/api/cron/purge-scheduled-deletions'
+      path: '/api/cron/purge-scheduled-deletions'
+      fullPath: '/api/cron/purge-scheduled-deletions'
+      preLoaderRoute: typeof ApiCronPurgeScheduledDeletionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/suppression': {
+      id: '/lovable/email/suppression'
+      path: '/lovable/email/suppression'
+      fullPath: '/lovable/email/suppression'
+      preLoaderRoute: typeof LovableEmailSuppressionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/oral-assessment/': {
+      id: '/tools/oral-assessment/'
+      path: '/tools/oral-assessment'
+      fullPath: '/tools/oral-assessment/'
+      preLoaderRoute: typeof ToolsOralAssessmentIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/oral-assessment/$assessmentId': {
+      id: '/tools/oral-assessment/$assessmentId'
+      path: '/tools/oral-assessment/$assessmentId'
+      fullPath: '/tools/oral-assessment/$assessmentId'
+      preLoaderRoute: typeof ToolsOralAssessmentAssessmentIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/oral-assessment/create': {
+      id: '/tools/oral-assessment/create'
+      path: '/tools/oral-assessment/create'
+      fullPath: '/tools/oral-assessment/create'
+      preLoaderRoute: typeof ToolsOralAssessmentCreateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/oral-assessment/student': {
+      id: '/tools/oral-assessment/student'
+      path: '/tools/oral-assessment/student'
+      fullPath: '/tools/oral-assessment/student'
+      preLoaderRoute: typeof ToolsOralAssessmentStudentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/prep-check/': {
+      id: '/tools/prep-check/'
+      path: '/tools/prep-check'
+      fullPath: '/tools/prep-check/'
+      preLoaderRoute: typeof ToolsPrepCheckIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/prep-check/config': {
+      id: '/tools/prep-check/config'
+      path: '/tools/prep-check/config'
+      fullPath: '/tools/prep-check/config'
+      preLoaderRoute: typeof ToolsPrepCheckConfigRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/prep-check/library': {
+      id: '/tools/prep-check/library'
+      path: '/tools/prep-check/library'
+      fullPath: '/tools/prep-check/library'
+      preLoaderRoute: typeof ToolsPrepCheckLibraryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/prep-check/review': {
+      id: '/tools/prep-check/review'
+      path: '/tools/prep-check/review'
+      fullPath: '/tools/prep-check/review'
+      preLoaderRoute: typeof ToolsPrepCheckReviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated/assessment/new/$classId': {
+      id: '/_authenticated/assessment/new/$classId'
+      path: '/assessment/new/$classId'
+      fullPath: '/assessment/new/$classId'
+      preLoaderRoute: typeof AuthenticatedAssessmentNewClassIdRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
     '/_authenticated/class/$classId/': {
@@ -981,74 +988,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedClassClassIdIndexRouteImport
       parentRoute: typeof AuthenticatedClassClassIdRoute
     }
-    '/tools/prep-check/subject/$subjectId': {
-      id: '/tools/prep-check/subject/$subjectId'
-      path: '/tools/prep-check/subject/$subjectId'
-      fullPath: '/tools/prep-check/subject/$subjectId'
-      preLoaderRoute: typeof ToolsPrepCheckSubjectSubjectIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tools/prep-check/report/$reviewId': {
-      id: '/tools/prep-check/report/$reviewId'
-      path: '/tools/prep-check/report/$reviewId'
-      fullPath: '/tools/prep-check/report/$reviewId'
-      preLoaderRoute: typeof ToolsPrepCheckReportReviewIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tools/oral-assessment/report/$sessionId': {
-      id: '/tools/oral-assessment/report/$sessionId'
-      path: '/tools/oral-assessment/report/$sessionId'
-      fullPath: '/tools/oral-assessment/report/$sessionId'
-      preLoaderRoute: typeof ToolsOralAssessmentReportSessionIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tools/oral-assessment/invite/$token': {
-      id: '/tools/oral-assessment/invite/$token'
-      path: '/tools/oral-assessment/invite/$token'
-      fullPath: '/tools/oral-assessment/invite/$token'
-      preLoaderRoute: typeof ToolsOralAssessmentInviteTokenRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tools/oral-assessment/interview/$sessionId': {
-      id: '/tools/oral-assessment/interview/$sessionId'
-      path: '/tools/oral-assessment/interview/$sessionId'
-      fullPath: '/tools/oral-assessment/interview/$sessionId'
-      preLoaderRoute: typeof ToolsOralAssessmentInterviewSessionIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/lovable/email/transactional/send': {
-      id: '/lovable/email/transactional/send'
-      path: '/lovable/email/transactional/send'
-      fullPath: '/lovable/email/transactional/send'
-      preLoaderRoute: typeof LovableEmailTransactionalSendRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/lovable/email/queue/process': {
-      id: '/lovable/email/queue/process'
-      path: '/lovable/email/queue/process'
-      fullPath: '/lovable/email/queue/process'
-      preLoaderRoute: typeof LovableEmailQueueProcessRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/lovable/email/auth/webhook': {
-      id: '/lovable/email/auth/webhook'
-      path: '/lovable/email/auth/webhook'
-      fullPath: '/lovable/email/auth/webhook'
-      preLoaderRoute: typeof LovableEmailAuthWebhookRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/public/payfast/webhook': {
-      id: '/api/public/payfast/webhook'
-      path: '/api/public/payfast/webhook'
-      fullPath: '/api/public/payfast/webhook'
-      preLoaderRoute: typeof ApiPublicPayfastWebhookRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_authenticated/class/$classId/report-comments': {
-      id: '/_authenticated/class/$classId/report-comments'
-      path: '/report-comments'
-      fullPath: '/class/$classId/report-comments'
-      preLoaderRoute: typeof AuthenticatedClassClassIdReportCommentsRouteImport
+    '/_authenticated/class/$classId/bulk-entry': {
+      id: '/_authenticated/class/$classId/bulk-entry'
+      path: '/bulk-entry'
+      fullPath: '/class/$classId/bulk-entry'
+      preLoaderRoute: typeof AuthenticatedClassClassIdBulkEntryRouteImport
       parentRoute: typeof AuthenticatedClassClassIdRoute
     }
     '/_authenticated/class/$classId/import': {
@@ -1058,19 +1002,75 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedClassClassIdImportRouteImport
       parentRoute: typeof AuthenticatedClassClassIdRoute
     }
-    '/_authenticated/class/$classId/bulk-entry': {
-      id: '/_authenticated/class/$classId/bulk-entry'
-      path: '/bulk-entry'
-      fullPath: '/class/$classId/bulk-entry'
-      preLoaderRoute: typeof AuthenticatedClassClassIdBulkEntryRouteImport
+    '/_authenticated/class/$classId/report-comments': {
+      id: '/_authenticated/class/$classId/report-comments'
+      path: '/report-comments'
+      fullPath: '/class/$classId/report-comments'
+      preLoaderRoute: typeof AuthenticatedClassClassIdReportCommentsRouteImport
       parentRoute: typeof AuthenticatedClassClassIdRoute
     }
-    '/_authenticated/assessment/new/$classId': {
-      id: '/_authenticated/assessment/new/$classId'
-      path: '/assessment/new/$classId'
-      fullPath: '/assessment/new/$classId'
-      preLoaderRoute: typeof AuthenticatedAssessmentNewClassIdRouteImport
-      parentRoute: typeof AuthenticatedRouteRoute
+    '/api/public/payfast/webhook': {
+      id: '/api/public/payfast/webhook'
+      path: '/api/public/payfast/webhook'
+      fullPath: '/api/public/payfast/webhook'
+      preLoaderRoute: typeof ApiPublicPayfastWebhookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/auth/webhook': {
+      id: '/lovable/email/auth/webhook'
+      path: '/lovable/email/auth/webhook'
+      fullPath: '/lovable/email/auth/webhook'
+      preLoaderRoute: typeof LovableEmailAuthWebhookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/queue/process': {
+      id: '/lovable/email/queue/process'
+      path: '/lovable/email/queue/process'
+      fullPath: '/lovable/email/queue/process'
+      preLoaderRoute: typeof LovableEmailQueueProcessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/transactional/send': {
+      id: '/lovable/email/transactional/send'
+      path: '/lovable/email/transactional/send'
+      fullPath: '/lovable/email/transactional/send'
+      preLoaderRoute: typeof LovableEmailTransactionalSendRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/oral-assessment/interview/$sessionId': {
+      id: '/tools/oral-assessment/interview/$sessionId'
+      path: '/tools/oral-assessment/interview/$sessionId'
+      fullPath: '/tools/oral-assessment/interview/$sessionId'
+      preLoaderRoute: typeof ToolsOralAssessmentInterviewSessionIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/oral-assessment/invite/$token': {
+      id: '/tools/oral-assessment/invite/$token'
+      path: '/tools/oral-assessment/invite/$token'
+      fullPath: '/tools/oral-assessment/invite/$token'
+      preLoaderRoute: typeof ToolsOralAssessmentInviteTokenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/oral-assessment/report/$sessionId': {
+      id: '/tools/oral-assessment/report/$sessionId'
+      path: '/tools/oral-assessment/report/$sessionId'
+      fullPath: '/tools/oral-assessment/report/$sessionId'
+      preLoaderRoute: typeof ToolsOralAssessmentReportSessionIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/prep-check/report/$reviewId': {
+      id: '/tools/prep-check/report/$reviewId'
+      path: '/tools/prep-check/report/$reviewId'
+      fullPath: '/tools/prep-check/report/$reviewId'
+      preLoaderRoute: typeof ToolsPrepCheckReportReviewIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/prep-check/subject/$subjectId': {
+      id: '/tools/prep-check/subject/$subjectId'
+      path: '/tools/prep-check/subject/$subjectId'
+      fullPath: '/tools/prep-check/subject/$subjectId'
+      preLoaderRoute: typeof ToolsPrepCheckSubjectSubjectIdRouteImport
+      parentRoute: typeof rootRouteImport
     }
   }
 }

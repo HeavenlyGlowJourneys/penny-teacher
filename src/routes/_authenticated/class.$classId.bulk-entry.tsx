@@ -143,7 +143,7 @@ function BulkEntryFlow({ classId }: { classId: string }) {
             {isTrialExpired
               ? "Your trial has ended — saving marks is paused until you add a payment method."
               : "Saving marks requires an active subscription."}{" "}
-            <Link to="/choose-plan" className="font-semibold underline underline-offset-2">
+            <Link to="/choose-plan" search={{ cancelled: undefined }} className="font-semibold underline underline-offset-2">
               Continue
             </Link>
           </p>

@@ -19,6 +19,7 @@ export function TrialBanner() {
         </span>
         <Link
           to="/choose-plan"
+          search={{ cancelled: undefined }}
           className="shrink-0 rounded-full bg-destructive px-3 py-1.5 text-xs font-bold text-destructive-foreground"
         >
           Add payment method
@@ -37,6 +38,7 @@ export function TrialBanner() {
         </span>
         <Link
           to="/choose-plan"
+          search={{ cancelled: undefined }}
           className="shrink-0 rounded-full bg-primary px-3 py-1.5 text-xs font-bold text-primary-foreground"
         >
           Add payment

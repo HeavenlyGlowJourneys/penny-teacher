@@ -69,7 +69,7 @@ Zlib-style notice in `node_modules/pako/lib/zlib/constants.js`:
 
 Both notices apply. The zlib header requires that the origin of the software not be misrepresented and that altered versions be marked as such.
 
-### SheetJS `xlsx` 0.18.5
+### SheetJS `xlsx` 0.20.3
 
 `package.json` license: `Apache-2.0`. The installed `LICENSE` file is the Apache License, Version 2.0. Its appendix identifies:
 
