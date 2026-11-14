@@ -1,0 +1,1 @@
+ALTER TABLE public.learners ADD COLUMN IF NOT EXISTS pronunciation_audio_path text;

@@ -1,0 +1,21 @@
+# Penny
+
+> Penny is an AI teaching assistant for South African teachers. Capture marks by voice, generate report comments and parent messages, and export learner results to Excel.
+
+## Pricing
+
+- One plan: R29/month (everything included)
+- 3-day free trial, no credit card required
+
+## Pages
+
+- [Home](/): What Penny does and why teachers use it.
+- [Pricing](/pricing): Plans and pricing from R29/month.
+- [FAQ](/faq): Common questions about trial, billing, and features.
+- [Privacy](/privacy): How Penny collects, uses, and protects data.
+- [Terms](/terms): Terms governing use of Penny.
+
+## Support
+
+- support@notify.pennyteacher.co.za
+- App: https://app.pennyteacher.co.za

@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /auth
+Disallow: /dashboard
+Disallow: /class
+Disallow: /assessment
+Disallow: /learner
+Disallow: /settings
+Disallow: /billing
+Disallow: /choose-plan
+Disallow: /payment-success
+
+Sitemap: https://app.pennyteacher.co.za/sitemap.xml
